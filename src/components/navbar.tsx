@@ -37,7 +37,7 @@ export function Navbar() {
               <span className="text-gray-400 text-xs">Прораб</span>
             </div>
             <div className="flex flex-col items-end gap-0.5">
-              <a href="tel:+79665060092" className="font-geist text-white hover:text-red-500 transition-colors duration-200 text-sm font-semibold leading-tight">+7 (966) 506-00-92</a>
+              <a href="tel:+79665060002" className="font-geist text-white hover:text-red-500 transition-colors duration-200 text-sm font-semibold leading-tight">+7 (966) 506-00-02</a>
               <span className="text-gray-400 text-xs">Руководитель</span>
             </div>
             <Button className="bg-red-500 hover:bg-red-600 text-white font-geist border-0">Получить расчёт</Button>
@@ -82,9 +82,9 @@ export function Navbar() {
                   <span className="text-gray-400 text-sm">Прораб</span>
                   <span className="font-semibold">+7 (960) 797-00-02</span>
                 </a>
-                <a href="tel:+79665060092" className="flex justify-between items-center font-geist text-white hover:text-red-500 transition-colors duration-200 py-1">
+                <a href="tel:+79665060002" className="flex justify-between items-center font-geist text-white hover:text-red-500 transition-colors duration-200 py-1">
                   <span className="text-gray-400 text-sm">Руководитель</span>
-                  <span className="font-semibold">+7 (966) 506-00-92</span>
+                  <span className="font-semibold">+7 (966) 506-00-02</span>
                 </a>
               </div>
               <div className="px-3 py-2">
