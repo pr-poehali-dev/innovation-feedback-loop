@@ -10,9 +10,11 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
-            <h1 className="font-orbitron text-xl font-bold text-white">
-              Строй<span className="text-red-500">Грей</span>
-            </h1>
+            <img
+              src="https://cdn.poehali.dev/projects/8f178685-8de5-4b30-ab19-a026cbfe129f/bucket/cb0c8776-cc40-4ed8-acf6-bbe4c1f3b848.jpg"
+              alt="СтройГрей"
+              className="h-10 w-auto"
+            />
           </div>
 
           <div className="hidden md:block">
