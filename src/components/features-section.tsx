@@ -1,53 +1,54 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import Icon from "@/components/ui/icon"
 
 const features = [
   {
-    title: "Адаптивная нейрообработка",
-    description: "Самооптимизирующиеся алгоритмы, которые обучаются на нейронных паттернах и улучшают интерпретацию сигналов.",
-    icon: "brain",
-    badge: "ИИ",
+    title: "Отделочные работы",
+    description: "Штукатурка, шпаклёвка, покраска, укладка плитки и напольных покрытий. Работаем с любыми поверхностями — от эконом до премиум-класса.",
+    icon: "PaintBucket",
+    badge: "Отделка",
   },
   {
-    title: "Медицинская защита",
-    description: "Шифрование по стандартам FDA со сквозной защитой конфиденциальных нейронных данных.",
-    icon: "lock",
-    badge: "Сертификат",
+    title: "Благоустройство территорий",
+    description: "Озеленение, укладка брусчатки, устройство дорожек, заборов и малых архитектурных форм. Преображаем участки под ключ.",
+    icon: "Trees",
+    badge: "Благоустройство",
   },
   {
-    title: "Интуитивное управление",
-    description: "Естественная трансляция мыслей в действия с откликом менее миллисекунды и точностью 99,7%.",
-    icon: "globe",
-    badge: "Точность",
+    title: "Сварочные работы",
+    description: "Изготовление металлоконструкций, ворот, заборов, лестниц и перил. Аргонодуговая и электродуговая сварка любой сложности.",
+    icon: "Flame",
+    badge: "Сварка",
   },
   {
-    title: "Предиктивная калибровка",
-    description: "ML-модели, которые предугадывают намерения пользователя и оптимизируют нейронные пути.",
-    icon: "zap",
-    badge: "Умный",
+    title: "Работы под ключ",
+    description: "Берём объект на полное сопровождение — от замера и сметы до сдачи. Один договор, один ответственный.",
+    icon: "KeyRound",
+    badge: "Комплекс",
   },
   {
-    title: "Биометрическая интеграция",
-    description: "Бесшовная синхронизация с мониторингом жизненных показателей для контроля здоровья.",
-    icon: "link",
-    badge: "Связь",
+    title: "Точные сметы",
+    description: "Фиксируем стоимость до начала работ. Никаких скрытых доплат и неожиданных расходов в процессе.",
+    icon: "ClipboardList",
+    badge: "Честно",
   },
   {
-    title: "Поддержка XR",
-    description: "Нативная совместимость с AR/VR-средами для терапевтических и рабочих приложений.",
-    icon: "target",
-    badge: "XR Ready",
+    title: "Гарантия на работы",
+    description: "Даём письменную гарантию на все выполненные работы. Если что-то пошло не так — устраним за свой счёт.",
+    icon: "ShieldCheck",
+    badge: "Гарантия",
   },
 ]
 
 export function FeaturesSection() {
   return (
-    <section className="py-24 px-6 bg-background">
+    <section id="services" className="py-24 px-6 bg-background">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4 font-sans">Возможности нового поколения</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-4 font-sans">Наши услуги</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Почувствуйте будущее с технологиями, которые переопределяют возможное
+            Выполняем строительные и отделочные работы любой сложности — в срок и по договору
           </p>
         </div>
 
@@ -60,13 +61,8 @@ export function FeaturesSection() {
             >
               <CardHeader>
                 <div className="flex items-center justify-between mb-2">
-                  <span className="text-3xl">
-                    {feature.icon === "brain" && "&#129504;"}
-                    {feature.icon === "lock" && "&#128274;"}
-                    {feature.icon === "globe" && "&#127760;"}
-                    {feature.icon === "zap" && "&#9889;"}
-                    {feature.icon === "link" && "&#128279;"}
-                    {feature.icon === "target" && "&#127919;"}
+                  <span className="text-red-500">
+                    <Icon name={feature.icon} size={32} fallback="Wrench" />
                   </span>
                   <Badge variant="secondary" className="bg-accent text-accent-foreground">
                     {feature.badge}
